@@ -1,6 +1,7 @@
 {
   "name": "shortenong-api",
   "version": "0.1.0",
+  "homepage": "https://Dima-Karpov.github.io/Short",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
@@ -14,6 +15,7 @@
     "@types/react-redux": "^7.1.21",
     "classnames": "^2.3.1",
     "framer-motion": "^5.5.6",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.22.5",
@@ -29,6 +31,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploi": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
